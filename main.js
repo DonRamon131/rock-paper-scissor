@@ -40,15 +40,16 @@ function playRound(playerSelection, computerSelection) {
     }
 }
 
-/*Main function*/
+/*Main function
 function game() {
     for (let i = 0; i < 5; i++) {
         let rpsPlayer = prompt("Choose one: Rock - Paper - Scissor");
         playRound(rpsPlayer.toUpperCase(), computerPlay(rpsComputer));
      }
 }
-
 game();
+*/
+
 /*Calling computerPlay() function and passing rpsComputer as argument
 computerPlay(rpsComputer);
 
