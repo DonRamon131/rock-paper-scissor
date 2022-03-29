@@ -39,6 +39,9 @@ function playRound(playerSelection, computerSelection) {
         console.log('You tie! Scissor = Scissor');
     }
 }
+let rock_button = document.getElementById('rocko');
+let paper_button = document.getElementById('papero');
+let scissors_button = document.getElementById('scissorso');
 
 /*Main function
 function game() {
@@ -50,8 +53,9 @@ function game() {
 game();
 */
 
-/*Calling computerPlay() function and passing rpsComputer as argument
+
+/*Calling computerPlay() function and passing rpsComputer as argument*/
 computerPlay(rpsComputer);
 
-Calling play() function that compares rpsPlayer and the returned value from computerPlay() function
-playRound(rpsPlayer.toUpperCase(), computerPlay(rpsComputer));*/
+/*Calling play() function that compares rpsPlayer and the returned value from computerPlay() function*/
+playRound(rpsPlayer.toUpperCase(), computerPlay(rpsComputer));
