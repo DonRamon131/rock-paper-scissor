@@ -1,5 +1,4 @@
 let rpsComputer = ['rock', 'paper', 'scissor'];
-/*let rpsPlayer = prompt("Choose one: Rock - Paper - Scissor");*/
 
 /*Function that returns a random value from arr*/
 function computerPlay(arr) {
@@ -40,14 +39,17 @@ function playRound(playerSelection, computerSelection) {
     }
 }
 
-/*Calling computerPlay() function and passing rpsComputer as argument*/
-computerPlay(rpsComputer);
+/*assigning computerPlay() function to variable call and passing rpsComputer as argument*/
+let call = computerPlay(rpsComputer);
 
 let rock_button = document.getElementById("rocko");
 let paper_button = document.getElementById("papero");
 let scissors_button = document.getElementById("scissorso");
 
-rock_button.addEventListener("click",playRound(playerSelection='',computerPlay(rpsComputer)));
+rock_button.addEventListener('click', event => {
+    playRound(playerSelection='ROCK',call);
+  });
+
 
 /*Main function
 function game() {
@@ -58,6 +60,3 @@ function game() {
 }
 game();
 */
-
-/*Calling playround() function that compares rpsPlayer and the returned value from computerPlay() function
-playRound(rpsPlayer.toUpperCase(), computerPlay(rpsComputer));*/
