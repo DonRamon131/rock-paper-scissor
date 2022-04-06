@@ -21,23 +21,23 @@ function playRound(playerSelection, computerSelection) {
     }
 
     else if ( (playerSelection == 'PAPER') && (computerSelection == 'rock') ) {
-        console.log('You Win! Paper beats Rock');
+        div_o.textContent = 'You Win! Paper beats Rock';
     }
     else if ( (playerSelection == 'PAPER') && (computerSelection == 'scissor') ) {
-        console.log('You Lose! Scissor beats Paper');
+        div_o.textContent = 'You Lose! Scissor beats Paper';
     }
     else if ( (playerSelection == 'PAPER') && (computerSelection == 'paper') ) {
-        console.log('You Tie! Paper = Paper');
+        div_o.textContent = 'You Tie! Paper = Paper';
     }
 
     else if ( (playerSelection == 'SCISSOR') && (computerSelection == 'paper') ) {
-        console.log('You Win! Scissor beats Paper');
+        div_o.textContent = 'You Win! Scissor beats Paper';
     }
     else if ( (playerSelection == 'SCISSOR') && (computerSelection == 'rock') ) {
-        console.log('You Lose! Rock beats Scissor');
+        div_o.textContent = 'You Lose! Rock beats Scissor';
     }
     else if ( (playerSelection == 'SCISSOR') && (computerSelection == 'scissor') ) {
-        console.log('You Tie! Scissor = Scissor');
+        div_o.textContent = 'You Tie! Scissor = Scissor';
     }
 }
 
@@ -50,6 +50,14 @@ let scissors_button = document.getElementById("scissorso");
 
 rock_button.addEventListener('click', event => {
     playRound(playerSelection='ROCK',call);
+  });
+
+paper_button.addEventListener('click', event => {
+    playRound(playerSelection='PAPER',call);
+  });
+
+scissors_button.addEventListener('click', event => {
+    playRound(playerSelection='SCISSOR',call);
   });
 
 
