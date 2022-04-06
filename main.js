@@ -5,17 +5,19 @@ function computerPlay(arr) {
     let random = arr[Math.floor(Math.random() * arr.length)];
     return random;
 }
+/*creating an instance div_o that gets id "divo"*/
+let div_o = document.getElementById('divo');
 
 /*Function that compares player selection and computer selection*/
 function playRound(playerSelection, computerSelection) {
     if ( (playerSelection == 'ROCK') && (computerSelection == 'paper') ) {
-        console.log('You Lose! Paper beats Rock');
+        div_o.textContent = 'You Lose! Paper beats Rock';
     }
     else if ( (playerSelection == 'ROCK') && (computerSelection == 'scissor') ) {
-        console.log('You Win! Rock beats Scissors');
+        div_o.textContent = 'You Win! Rock beats Scissor';
     }
     else if ( (playerSelection == 'ROCK') && (computerSelection == 'rock') ) {
-        console.log('You tie! Rock = Rock');
+        div_o.textContent = 'You Tie! Rock = Rock';
     }
 
     else if ( (playerSelection == 'PAPER') && (computerSelection == 'rock') ) {
@@ -25,7 +27,7 @@ function playRound(playerSelection, computerSelection) {
         console.log('You Lose! Scissor beats Paper');
     }
     else if ( (playerSelection == 'PAPER') && (computerSelection == 'paper') ) {
-        console.log('You tie! Paper = Paper');
+        console.log('You Tie! Paper = Paper');
     }
 
     else if ( (playerSelection == 'SCISSOR') && (computerSelection == 'paper') ) {
@@ -35,7 +37,7 @@ function playRound(playerSelection, computerSelection) {
         console.log('You Lose! Rock beats Scissor');
     }
     else if ( (playerSelection == 'SCISSOR') && (computerSelection == 'scissor') ) {
-        console.log('You tie! Scissor = Scissor');
+        console.log('You Tie! Scissor = Scissor');
     }
 }
 
