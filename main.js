@@ -48,24 +48,15 @@ let rock_button = document.getElementById("rocko");
 let paper_button = document.getElementById("papero");
 let scissors_button = document.getElementById("scissorso");
 
-let tot = 0;
-let run_sco = document.getElementById('to');
-
 rock_button.addEventListener('click', event => {
-    tot++;
-    run_sco += tot;
     playRound(playerSelection='ROCK',call);
   });
 
 paper_button.addEventListener('click', event => {
-    tot++;
-    run_sco += tot;
     playRound(playerSelection='PAPER',call);
   });
 
 scissors_button.addEventListener('click', event => {
-    tot++;
-    run_sco += tot;
     playRound(playerSelection='SCISSOR',call);
   });
 
