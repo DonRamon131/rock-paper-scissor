@@ -60,6 +60,8 @@ scissors_button.addEventListener('click', event => {
     playRound(playerSelection='SCISSOR',call);
   });
 
+  let run_sco = document.getElementById('rs');
+  
 
 /*Main function
 function game() {
