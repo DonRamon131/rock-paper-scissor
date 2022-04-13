@@ -48,17 +48,17 @@ let rock_button = document.getElementById("rocko");
 let paper_button = document.getElementById("papero");
 let scissors_button = document.getElementById("scissorso");
 
-rock_button.addEventListener('click', event => {
-    playRound(playerSelection='ROCK',call);
-  });
+rock_button.addEventListener('click', e => {
+    playRound(playerSelection='ROCK',call); }, {once: true}
+  );
 
-paper_button.addEventListener('click', event => {
-    playRound(playerSelection='PAPER',call);
-  });
+paper_button.addEventListener('click', e => {
+    playRound(playerSelection='PAPER',call);}, {once: true}
+  );
 
-scissors_button.addEventListener('click', event => {
-    playRound(playerSelection='SCISSOR',call);
-  });
+scissors_button.addEventListener('click', e => {
+    playRound(playerSelection='SCISSOR',call);}, {once: true}
+  );
 
 
 /*Main function
