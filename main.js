@@ -5,8 +5,16 @@ function computerPlay(arr) {
     let random = arr[Math.floor(Math.random() * arr.length)];
     return random;
 }
+
+let round = 0; let win = 0; let lose = 0;
+
 /*creating an instance div_o that gets id "divo"*/
 let div_o = document.getElementById('divo');
+
+/*creating instances that get id of rounds played, wins, loses*/
+let rounds_o = document.getElementById('roundso');
+let win_o = document.getElementById('wino');
+let lose_o = document.getElementById('loseo');
 
 /*Function that compares player selection and computer selection*/
 function playRound(playerSelection, computerSelection) {
@@ -49,24 +57,13 @@ let paper_button = document.getElementById("papero");
 let scissors_button = document.getElementById("scissorso");
 
 rock_button.addEventListener('click', e => {
-    playRound(playerSelection='ROCK',call); }, {once: true}
+    playRound(playerSelection='ROCK',call); } 
   );
 
 paper_button.addEventListener('click', e => {
-    playRound(playerSelection='PAPER',call);}, {once: true}
+    playRound(playerSelection='PAPER',call);}
   );
 
 scissors_button.addEventListener('click', e => {
-    playRound(playerSelection='SCISSOR',call);}, {once: true}
+    playRound(playerSelection='SCISSOR',call);}
   );
-
-
-/*Main function
-function game() {
-    for (let i = 0; i < 5; i++) {
-        let rpsPlayer = prompt("Choose one: Rock - Paper - Scissor");
-        playRound(rpsPlayer.toUpperCase(), computerPlay(rpsComputer));
-     }
-}
-game();
-*/
