@@ -24,48 +24,66 @@ function playRound(playerSelection, computerSelection) {
         div_o.textContent += 'You Lose! Paper beats Rock\r\n';
         round++;
         lose++;
+        round_o.textContent = round;
+        lose_o.textContent = lose;
     }
     else if ( (playerSelection == 'ROCK') && (computerSelection == 'scissor') ) {
         div_o.textContent += 'You Win! Rock beats Scissor\r\n';
         round++;
         win++;
+        round_o.textContent = round;
+        win_o.textContent = win;
     }
     else if ( (playerSelection == 'ROCK') && (computerSelection == 'rock') ) {
         div_o.textContent += 'You Tie! Rock = Rock\r\n';
         round++;
         tie++;
+        round_o.textContent = round;
+        tie_o.textContent = tie;
     }
 
     else if ( (playerSelection == 'PAPER') && (computerSelection == 'rock') ) {
         div_o.textContent += 'You Win! Paper beats Rock\r\n';
         round++;
         win++;
+        round_o.textContent = round;
+        win_o.textContent = win;
     }
     else if ( (playerSelection == 'PAPER') && (computerSelection == 'scissor') ) {
         div_o.textContent += 'You Lose! Scissor beats Paper\r\n';
         round++;
         lose++;
+        round_o.textContent = round;
+        lose_o.textContent = lose;
     }
     else if ( (playerSelection == 'PAPER') && (computerSelection == 'paper') ) {
         div_o.textContent += 'You Tie! Paper = Paper\r\n';
         round++;
         tie++;
+        round_o.textContent = round;
+        tie_o.textContent = tie;
     }
 
     else if ( (playerSelection == 'SCISSOR') && (computerSelection == 'paper') ) {
         div_o.textContent += 'You Win! Scissor beats Paper\r\n';
         round++;
         win++;
+        round_o.textContent = round;
+        win_o.textContent = win;
     }
     else if ( (playerSelection == 'SCISSOR') && (computerSelection == 'rock') ) {
         div_o.textContent += 'You Lose! Rock beats Scissor\r\n';
         round++;
         lose++;
+        round_o.textContent = round;
+        lose_o.textContent = lose;
     }
     else if ( (playerSelection == 'SCISSOR') && (computerSelection == 'scissor') ) {
         div_o.textContent += 'You Tie! Scissor = Scissor\r\n';
         round++;
         tie++;
+        round_o.textContent = round;
+        tie_o.textContent = tie;
     }
 }
 
