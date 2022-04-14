@@ -6,6 +6,9 @@ function computerPlay(arr) {
     return random;
 }
 
+/*assigning computerPlay() function to variable call and passing rpsComputer as argument*/
+let computerSelection = computerPlay(rpsComputer);
+
 /*created variable  to track rounds, wins, loses, and ties*/
 let round = 0; let tie = 0; let win = 0; let lose = 0; 
 
@@ -87,21 +90,26 @@ function playRound(playerSelection, computerSelection) {
     }
 }
 
-/*assigning computerPlay() function to variable call and passing rpsComputer as argument*/
-let call = computerPlay(rpsComputer);
-
 let rock_button = document.getElementById("rocko");
 let paper_button = document.getElementById("papero");
 let scissors_button = document.getElementById("scissorso");
 
 rock_button.addEventListener('click', e => {
-    playRound(playerSelection='ROCK',call); } 
+    computerSelection;
+    playerSelection = 'ROCK';
+    playRound(playerSelection,computerSelection);
+    console.log(computerSelection);
+}
   );
 
 paper_button.addEventListener('click', e => {
-    playRound(playerSelection='PAPER',call);}
+    playerSelection = 'PAPER';
+    playRound(playerSelection,computerSelection);
+} 
   );
 
 scissors_button.addEventListener('click', e => {
-    playRound(playerSelection='SCISSOR',call);}
+    playerSelection = 'SCISSOR';
+    playRound(playerSelection,computerSelection);
+}
   );
